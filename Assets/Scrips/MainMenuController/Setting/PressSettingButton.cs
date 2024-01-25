@@ -9,7 +9,6 @@ public class PressSettingButton : MonoBehaviour
 
     public void PressButton()
     {
-        Debug.Log("SA");
         _panel.SetActive(true);
         LeanTween.scale(_panel, new Vector3(1f, 1f, 1f), 0.7f).setDelay(0.5f).setEase(LeanTweenType.easeOutBounce).setOnComplete(scaleBackgroundUp);
 
